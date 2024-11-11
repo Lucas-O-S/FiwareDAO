@@ -13,10 +13,12 @@ namespace Leitor
         {
             string host = "4.228.64.5";
             int n = 10;
-            string lamp = "02y";
+            string lamp = "03y";
+
 
             if (await FiwareDAO.VerificarServer(host) == true)
             {
+
                 while (true)
                 {
                     Leitura l = await FiwareDAO.Ler(host,lamp);
